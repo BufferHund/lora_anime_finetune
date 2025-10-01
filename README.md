@@ -136,3 +136,33 @@ A compressed archive containing all experimental results, including generated im
   * **Mixed Precision**: The notebook defaults to `bf16` precision on compatible hardware (e.g., Ampere GPUs) and falls back to `fp16` otherwise.
   * **Memory Optimization**: To ensure stability on systems with limited VRAM, several optimizations are enabled by default, including gradient checkpointing, SNR-weighted loss calculation, attention slicing, and VAE tiling.
   * **Reproducibility**: All configurations and metric results are saved to JSON files, ensuring that experiments can be easily tracked and reproduced.
+
+  ## References
+
+### Code Repositories
+- Hoper-J / [AI-Guide-and-Demos-zh_CN](https://github.com/Hoper-J/AI-Guide-and-Demos-zh_CN)  
+  *Reference for LoRA fine-tuning, esp. “14b” simplified notebook. Used as structural inspiration (~10–15% overlap); majority of this repo’s code has been newly extended and reorganized.*
+
+- Hugging Face / [diffusers](https://github.com/huggingface/diffusers)  
+  *Core library for Stable Diffusion, pipelines, UNet, VAE, and schedulers.*
+
+- Hugging Face / [transformers](https://github.com/huggingface/transformers)  
+  *Provides CLIP text encoder and tokenizer, plus general NLP utilities.*
+
+- Hugging Face / [peft](https://github.com/huggingface/peft)  
+  *LoRA integration and parameter-efficient fine-tuning toolkit.*
+
+- Hugging Face / [accelerate](https://github.com/huggingface/accelerate)  
+  *Optional library for efficient multi-GPU/mixed precision training.*
+
+---
+
+### Articles & Guides
+- *Using LoRA to Fine-tune Stable Diffusion: Opening the Furnace and Implementing Your First AI Drawing.*  
+  *Conceptual reference for methodology and experimental design.*
+
+- Hugging Face blog: *[Parameter-Efficient Fine-Tuning (PEFT): LoRA and Beyond](https://huggingface.co/blog/peft)*  
+  *Provided key insights on efficient adaptation methods for large models.*
+
+- Papers/Community Notes on Stable Diffusion & LoRA (various).  
+  *General inspiration for training design, evaluation metrics, and best practices.*
